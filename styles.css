@@ -430,6 +430,10 @@ a{
     margin-bottom: 1em;
 }
 
+.contacto{
+    text-decoration:none;
+    color: white;
+}
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
     .d-none-sm{
