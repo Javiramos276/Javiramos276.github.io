@@ -110,6 +110,13 @@ html, body {
         width: 100%;
     }
     
+
+    .titulo{
+        border-bottom: 2px solid var(--gold);
+        padding-bottom: 10px;
+        
+    }
+
     .container{
         display: flex;
         flex-direction: column;
@@ -117,7 +124,8 @@ html, body {
 
     .container-parrafo {
         width: 100%;
-        height: auto; /* O elimina esta línea si no es necesaria */
+        height: auto;
+        margin-bottom: 1em;
     }
 
     .descripcion-proyecto {
@@ -131,21 +139,21 @@ html, body {
 
     .container-imagen {
         width: 100%;
-        max-width: 500px; /* Puedes ajustar según sea necesario */
+        max-width: 500px;
         height: auto;
     }
 
     .parrafo{
         width: 300px;
         width: 100%;
+        margin-left: 0;
     }
 
     .cmd-codigo{
         display: none;
     }
 
-    .container-parrafo2{
-        padding-right: 15px;
-        padding-left: 15px;
+    li{
+        margin-right: 0px;
     }
 }
