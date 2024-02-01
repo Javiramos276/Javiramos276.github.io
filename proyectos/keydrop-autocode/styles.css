@@ -1,0 +1,151 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0C0C0C !important;
+    --negro : #1F1E27;
+    --negro-claro: #17171C;
+    --amarillo:#F2B872;
+    --gold:#ffd700;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-dir{
+    flex-direction: column;
+}
+
+.descripcion-proyecto{
+    display: flex;
+    flex-direction: column;
+    margin: 0em 10em 0em 10em;
+}
+
+
+.titulo{
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 1em;
+    color: white;
+}
+.container-imagen{
+    width: 500px;
+    height: 300px;
+    
+}
+
+.foto-codigo{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #C18708;
+}
+
+.container-par-foto{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-parrafo{
+    width: 100%;
+    height: auto;
+}
+
+.container-imagen{
+    max-width: 500px;
+    height: auto;
+}
+
+.parrafo{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3em;
+    letter-spacing: 2px;
+    text-align: justify;
+    color: white;
+}
+
+.container-par-foto2{
+    margin-top: 3em;
+}
+
+
+.container-imagen2{
+    width: 650px;
+    height: 400px;
+    margin-right: 3em;
+}
+
+.cmd-codigo{
+    border-radius: 4px;
+    width: 850px;
+    float: left;
+    margin-right: 1em;
+    border-style: solid;
+    border-color: #C18708;
+}
+
+
+
+.parrafo2{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    text-align: justify;
+    color: white;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-parrafo {
+        width: 100%;
+        height: auto; /* O elimina esta línea si no es necesaria */
+    }
+
+    .descripcion-proyecto {
+        margin: 0;
+    }
+
+    .container-par-foto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-imagen {
+        width: 100%;
+        max-width: 500px; /* Puedes ajustar según sea necesario */
+        height: auto;
+    }
+
+    .parrafo{
+        width: 300px;
+        width: 100%;
+    }
+
+    .cmd-codigo{
+        display: none;
+    }
+
+    .container-parrafo2{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
