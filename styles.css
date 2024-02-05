@@ -351,68 +351,18 @@ a{
     margin-left: 1em;
   }
   
-.barra1 {
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    width: 70%;
-    height: 100%;
-    background-color: var(--salmon);
+.container-tecnologia{
+    justify-content:space-evenly;
 }
 
-.barra2 {
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    background-color: var(--salmon);
+.tecnologia{
+    border-radius: 50%;
+    border: 4px solid #fff; /* Puedes cambiar el color del borde aquí */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 50px;
+    height: 50px;
 }
 
-.barra3 {
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    background-color: var(--salmon);
-}
-
-.barra4 {
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-    background-color: var(--salmon);
-}
-
-.barra5 {
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    background-color: var(--salmon);
-}
-
-.barra6 {
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    width: 20%;
-    height: 100%;
-    background-color: var(--salmon);
-}
-
-.barra7 {
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    width: 20%;
-    height: 100%;
-    background-color: var(--salmon);
-}
 
 #Tecnologias{
     margin-bottom: 10em;
@@ -444,6 +394,15 @@ a{
         display: flex;
     }
 
+    .d-grid-sm{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        padding-top: 20px;
+    }
+    .tecnologia{
+        margin-top: 20px;
+    }
 }
 
 /*Configuracion para escritorio/tablets */
@@ -510,7 +469,7 @@ a{
 
 
     .m-top1em{
-        margin-top: 1em;
+        margin-top: 2em;
     }
 
     .txt-aling-ctr{
