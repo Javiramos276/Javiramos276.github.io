@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javier Ramos Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./boostrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
     <!-- importamos la fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,34 +15,38 @@
 </head>
 <body>
     <!-- <-------------------------------- Inicio Navbar -------------------------------->
-    <div class="container-navbar d-none-lg">
-        <ul class="navbar d-flex-lg d-none-lg">
-            <div class="dropdown d-none-lg">
-                <button class="dropbtn d-none-lg"><img src="imgs/icons8-menú-50.png" alt="" class="img-menu"></button>
+    <!-- Navbar para pantallas pequeñas con dropdown -->
+    <div class="container-navbar d-lg-none">
+        <ul class="navbar d-flex justify-content-start">
+            <div class="dropdown">
+                <button class="dropbtn"><img src="imgs/icons8-menú-50.png" alt="Menú" class="img-menu"></button>
                 <div class="dropdown-content">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#Acerca">Acerca de mí</a></li>
-                  <li><a href="#Servicios">Servicios</a></li>
-                  <li><a href="#Tecnologias">Tecnologías </a></li>
-                  <li><a href="#portfolio">Portfolio </a></li>
-                  <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Acerca">Acerca de mí</a></li>
+                    <li><a href="#Servicios">Servicios</a></li>
+                    <li><a href="#Tecnologias">Tecnologías</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </div>
             </div>
         </ul>
     </div>
 
-    <div class="container-navbar-lg border-navbar">
-        <div class="d-none-sm margin-lg">
-            <ul class="d-flex-lg flex-dir pad-0">
-            <li class="li-navbar list-style-none"><a href="#" class="a-navbar color-black">Home</a></li>
-            <li class="li-navbar list-style-none"><a href="#Acerca">Acerca de mi</a></li>
-            <li class="li-navbar list-style-none"><a href="#Servicios">Servicios</a></li>
-            <li class="li-navbar list-style-none"><a href="#portfolio">Portfolio </a></li>
-            <li class="li-navbar list-style-none"><a href="#Tecnologias">Tecnologias </a></li>
-            <li class="li-navbar list-style-none"><a href="#contacto">Contacto</a></li>
+    <!-- Navbar para pantallas medianas y grandes -->
+    <div class="container-navbar-lg border-navbar d-none d-lg-block">
+        <div class="margin-lg">
+            <ul class="d-flex flex-dir pad-0">
+                <li class="nav-link list-style-none"><a href="#" class="a-navbar color-black">Home</a></li>
+                <li class="nav-link list-style-none"><a href="#Acerca" class="a-navbar">Acerca de mi</a></li>
+                <li class="nav-link list-style-none"><a href="#Servicios" class="a-navbar">Servicios</a></li>
+                <li class="nav-link list-style-none"><a href="#portfolio" class="a-navbar">Portfolio</a></li>
+                <li class="nav-link list-style-none"><a href="#Tecnologias" class="a-navbar">Tecnologias</a></li>
+                <li class="nav-link list-style-none"><a href="#contacto" class="a-navbar">Contacto</a></li>
             </ul>
         </div>
     </div>
+
+
     <!-- <-------------------------------- Fin Navbar -------------------------------->
     
     <!-- <-------------------------------- Inicio header -------------------------------->
@@ -51,7 +56,7 @@
                 <div class="info-sobre-mi">
                     <h6 class="subtitulo-header">Hola, soy</h6>
                     <h1 class="titulo-header">Javier <br class="d-none-lg"> Ramos</h1>
-                    <p class="parrafo-header">Estudiante de licenciatura en ciencias físicas y<br>
+                    <p class="parrafo-header">Estudiante de ciencias físicas y computación<br>
                     programador Freelance
                     </p>
                     <button class="btn-header"><a href="mailto:ramosjavier276@gmail.com" class="contacto">CONTACTAME</a></button>
@@ -72,8 +77,8 @@
     <section id="Acerca"></section>
         <div class="container-acerca margin-lg">
             <h6 class="h6-acerca">Acerca de mi</h6>
-            <p class="parrafo">Soy estudiante de licenciatura de ciencias físicas de la universidad de Buenos Aires, comencé en el mundo de la programación a inicios de 2023, en principio como un hobbie y luego descubrí un mundo amplio lleno de retos que llamó mi atención.
-                Mi enfoque principal se centra en la programación backend y la resolución de problemas, aunque también tengo un interés activo en el desarrollo frontend, continuando mi aprendizaje en esta área. Mi lenguaje de programación principal es Python, conozco frameworks como Django y Flask que he utilizado para algunos de mis proyectos. Además, estoy inmerso en el aprendizaje de JavaScript y Angular para ampliar mis habilidades en el desarrollo frontend. <br>
+            <p class="parrafo">Soy estudiante de licenciatura de ciencias físicas y ciencias de computación de la universidad de Buenos Aires, comencé en el mundo de la programación a inicios de 2023, en principio como un hobbie y luego descubrí un mundo amplio lleno de retos que llamó mi atención.
+                Mi enfoque principal se centra en la programación backend y la resolución de problemas, aunque también tengo un interés activo en el desarrollo frontend, continuando mi aprendizaje en esta área. Mi lenguaje de programación principal es Python, conozco frameworks como Django y Flask que he utilizado para algunos de mis proyectos. Además, estoy inmerso en el aprendizaje de JavaScript y React para ampliar mis habilidades en el desarrollo frontend. <br>
                 Además, poseo conocimientos avanzados en matemáticas y física, lo que enriquece mi capacidad para abordar problemas desde una perspectiva analítica y científica. En cuanto a habilidades lingüísticas, poseo un nivel avanzado en lectura de inglés y habilidades básicas de expresión oral. Estoy comprometido con el constante perfeccionamiento de mis habilidades técnicas y profesionales para contribuir de manera significativa al mundo de la programación y la ciencia.
             </p>
 
@@ -86,23 +91,25 @@
             <div class="container-servicios margin-lg margin-top">
                 <h6 class="h6-servicios">Servicios</h6>
                 <h5 class="h5-servicios">¿Qué Hago?</h5>
-                <p class="parrafo">Me dedico principalmente al scrapping web, y a la automatización de procesos y tratamiento de la información. Sin embargo, también realizo distintas tareas en función de lo que se requiera. Busco cuál es la tecnología más adecuada para resolver dicho problema y utilizo todas las herramientas que conozco para potenciar el resultado. </p>
+                <p class="parrafo">Me dedico principalmente al desarrollo web,automatización de procesos y tratamiento de la información. Sin embargo, también realizo distintas tareas en función de lo que se requiera. Busco cuál es la tecnología más adecuada para resolver dicho problema y utilizo todas las herramientas que conozco para potenciar el resultado. </p>
             </div>
-        <div class="container-general-servicios margin-lg d-flex-lg m-top1em aling-items">
+        <div class="container-general-servicios margin-lg m-top1em d-grid-sm">
             <div class="carta-servicios margin-1em ">
                 <div class="container-imagen-carta">
                     <img src="imgs/icons8-hacker-50.png" alt="imagen-primera-carta-hacker" class="img-carta">
                 </div>
                 <h5 class="h5-carta">Scrapping web</h5>
-                <p class="parrafo">Extracción de información de sitios web, redes sociales, foros y otras plataformas en línea. Utilizando herramientas avanzadas y técnicas de scrapping ético para su posterior análisis y toma de decisiones.</p>
+                <p class="parrafo-card">Extracción de información de sitios web, redes sociales, foros y otras plataformas en línea. Utilizando herramientas avanzadas y técnicas de scrapping ético para su posterior análisis y toma de decisiones.</p>
             </div>
+
+            
 
             <div class="carta-servicios margin-1em margin-top0">
                 <div class="container-imagen-carta ">
                     <img src="imgs/icons8-monitor-50.png" alt="imagen-primera-carta-monitor" class="img-carta">
                 </div>
                 <h5 class="h5-carta">Automatización de procesos</h5>
-                <p class="parrafo"> Automatización de tareas repetitivas. Esto incluye la automatización de informes, procesos de flujo de trabajo y la integración de sistemas para una mayor eficiencia operativa.</p>
+                <p class="parrafo-card"> Automatización de tareas repetitivas. Esto incluye la automatización de informes, procesos de flujo de trabajo y la integración de sistemas para una mayor eficiencia operativa.</p>
             </div>
 
             <div class="carta-servicios margin-1em">
@@ -110,7 +117,23 @@
                     <img src="imgs/icons8-lupa-64.png" alt="imagen-primera-carta-monitor" class="img-carta">
                 </div>
                 <h5 class="h5-carta">Tratamiento de información</h5>
-                <p class="parrafo">Depuración de la información obtenida, transformación y análisis de datos que aseguran información útil y precisa. Detección de patrones, creación de visualizaciones y la generación de informes personalizados.</p>
+                <p class="parrafo-card">Depuración de la información obtenida, transformación y análisis de datos que aseguran información útil y precisa. Detección de patrones, creación de visualizaciones y la generación de informes personalizados.</p>
+            </div>
+            
+            <div class="carta-servicios margin-1em ">
+                <div class="container-imagen-carta">
+                    <img src="imgs/icons8-web-50.png" alt="imagen-web" class="img-carta">
+                </div>
+                <h5 class="h5-carta">Desarrollo web</h5>
+                <p class="parrafo-card">Creación de páginas webs complejas para tu proyecto, con diseño responsive para poder visualizarlo correctamente desde cualquier dispositivo</p>
+            </div>
+
+            <div class="carta-servicios margin-1em ">
+                <div class="container-imagen-carta">
+                    <img src="imgs/icons8-servidor-50.png" alt="imagen-primera-carta-hacker" class="img-carta">
+                </div>
+                <h5 class="h5-carta">Hosting</h5>
+                <p class="parrafo-card">Alojamiento para tu página web y configuración adecuada para tus necesidades, esto tambien incluye dominio a tu nombre y mantenimiento.</p>
             </div>
         </div>
     </section>
@@ -122,70 +145,132 @@
         <div class="container">
             <h6 class="h6-servicios">Tecnologías</h6>
             <h5 class="h5-servicios">Algunas tecnologías que más utilizo desde que comencé a programar</h5>
-            <div class="container-tecnologia margin-lg d-flex m-top1em d-grid-sm">
-                <img src="imgs/icons8-python-48.png" alt="" class="tecnologia">
-                <img src="imgs/icons8-html5-48.png" alt="" class="tecnologia">
-                <img src="imgs/icons8-css3-48.png" alt="" class="tecnologia">
-                <img src="imgs/icons8-javascript-48.png" alt="" class="tecnologia">
-                <img src="imgs/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-48.png" alt="" class="tecnologia">
-                <img src="imgs/icons8-matraz-50.png" alt="" class="tecnologia">
-                <img src="imgs/icons8-mysql-48.png" alt="" class="tecnologia">
-                <img src="imgs/icons8-github-50.png" alt="" class="tecnologia">
-                <img src="imgs/icons8-git-48.png" alt="" class="tecnologia">
+            <div class="container-tecnologia margin-lg mt-5">
+                <div class="row row-cols-3 row-cols-md-3 g-3">
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="imgs/icons8-python-48.png" alt="" class="tecnologia">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="imgs/icons8-html5-48.png" alt="" class="tecnologia">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="imgs/icons8-css3-48.png" alt="" class="tecnologia">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="imgs/icons8-javascript-48.png" alt="" class="tecnologia">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="imgs/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-48.png" alt="" class="tecnologia">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="imgs/icons8-matraz-50.png" alt="" class="tecnologia">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="imgs/icons8-mysql-48.png" alt="" class="tecnologia">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="imgs/icons8-github-50.png" alt="" class="tecnologia">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="imgs/icons8-git-48.png" alt="" class="tecnologia">
+                    </div>
+                </div>
             </div>
-
         </div>
+        
+        
+        
     </section>
     <!-- <-------------------------------- Fin Tecnologías -------------------------------->
 
     <!-- <-------------------------------- Inicio Portfolio -------------------------------->
     <section id="portfolio">
-        <div class="container margin-lg">
+        <div class="margin-lg">
             <div class="container-portfolio">
                 <h6 class="h6-portfolio">Portfolio</h6>
                 <h5 class="h5-portfolio">Mi trayectoria</h5>
                 <p class="parrafo-portfolio txt-aling-ctr">A continuación se presentan algunos proyectos que he hecho y otros donde he participado.</p>
             </div>
-            <div class="container-imagenes-proyectos d-flex-lg">
-                <div class="imagen-con-hover">
-                    <img src="imgs/Cuponera.jpg" alt="">
-                    <div class="overlay">
-                        <p class="descripcion-proyecto">Cuponera-Desk es un proyecto para generar cupones de descuento para tus clientes, además, podés generar imágenes y enviarlas a través de whatsapp, subirlo a tus redes sociales e incrementar tus ventas
+
+            <div class="d-flex margin-botton justify-content-center w-auto">
+                <div class="w-lg-100 h-auto border border-3 d-none d-lg-block">
+                    <img src="./imgs/Crab_project.png" alt="" class="img-fluid">
+                </div>
+                <div class="w-100 h-auto d-flex flex-column">
+                    <div class="titulo px-2 h6-portfolio">
+                        <p class="border-bottom-crab">Proyecto CRAB</p>
+                    </div>
+                    <div class="descripcion-proyecto">
+                        <p class="f-size-18">
+                            El proyecto CRAB es una página simulacro para el Club de Regatas Almirante Brown, creado con Django. Tiene múltiples funcionalidades como la creación de noticias y un listado de actividades personalizables para usuarios activos en la página, a los cuales dichos usuarios se pueden anotar. Además, los administradores podrán adquirir un PDF con el listado de usuarios anotados una vez finalizada la fecha de dicha actividad.
                         </p>
-                        <a href="http://laevatein54.com.ar/CuponeraDesk/" class="boton">Ver más</a>
-                    </div>
-                </div>
-                <div class="imagen-con-hover">
-                    <img src="imgs/Keydropautocode.jpg" alt="" class="keydrop-foto">
-                    <div class="overlay">
-                        <p class="descripcion-proyecto">Keydrop autocode permite coleccionar códigos de oro <strong> de manera instantánea</strong>. Esta conectado a un bot de discord para que puedas canjear los códigos a cualquier hora del dia! </p>
-                        <a href="/proyectos/keydrop-autocode/" class="boton">Ver más</a>
-                    </div>
-                </div>
-                <div class="imagen-con-hover">
-                    <img src="imgs/cybersecurity.webp" alt="" class="ip-filter">
-                    <div class="overlay">
-                        <p class="descripcion-proyecto"> Ip-filter-attack es un proyecto que permite prohibir solicitudes provenientes de scripts automatizados con intenciones de buscar vulnerabilidades en tu página web. </p>
-                        <div class="container-botones-proyecto">
-                            <a href="https://github.com/Javiramos276/Ip-filter-attack" class="boton"><img src="imgs/icons8-github-50.png" alt="" class="github-foto-negro"></a>
+                        <div class="container d-flex justify-content-center">
+                            <div class="d-inline mb-3 mt-3">
+                                <a href="/proyectos/CRAB/" class="boton-proyecto"> Ver más </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="imagen-con-hover">
-                    <img src="imgs/carrito-de-compras-ecommerce.jpg" alt="" class="carrito-de-compras">
-                    <div class="overlay">
-                        <p class="descripcion-proyecto">Carrito de compras hecho en lenguaje javascript, html y css. Se utilizaron objetos, consumición de una API y manejo del DOM para cargar los objetos dinámicamente en la página.</p>
-                        <div class="container-botones-proyecto">
-                            <a href="https://github.com/Javiramos276/Carrito-compras-js" class="boton"><img src="imgs/icons8-github-50.png" alt="" class="github-foto-negro"></a>
+            </div>
+            <div class="container-imagenes-proyectos d-flex-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="imagen-con-hover">
+                                <img src="imgs/Cuponera.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="descripcion-proyecto">Cuponera-Desk es un proyecto para generar cupones de descuento para tus clientes, además, podés generar imágenes y enviarlas a través de whatsapp, subirlo a tus redes sociales e incrementar tus ventas</p>
+                                    <a href="http://laevatein54.com.ar/CuponeraDesk/" class="boton">Ver más</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="imagen-con-hover">
-                    <img src="imgs/illustration-curriculum-vitae-or-cv-concept-vector.jpg" alt="" class="QR-django">
-                    <div class="overlay">
-                        <p class="descripcion-proyecto">Proyecto para generación de qr con el fin crear una página web como una plantilla para un currículum vitae. </p>
-                        <div class="container-botones-proyecto">
-                            <a href="https://github.com/Javiramos276/Django_test" class="boton"><img src="imgs/icons8-github-50.png" alt="" class="github-foto-negro"></a>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="imagen-con-hover">
+                                <img src="imgs/Keydropautocode.jpg" alt="" class="keydrop-foto">
+                                <div class="overlay">
+                                    <p class="descripcion-proyecto">Keydrop autocode permite coleccionar códigos de oro <strong> de manera instantánea</strong>. Esta conectado a un bot de discord para que puedas canjear los códigos a cualquier hora del dia!</p>
+                                    <a href="/proyectos/keydrop-autocode/" class="boton">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="imagen-con-hover">
+                                <img src="imgs/cybersecurity.webp" alt="" class="ip-filter">
+                                <div class="overlay">
+                                    <p class="descripcion-proyecto">Ip-filter-attack es un proyecto que permite prohibir solicitudes provenientes de scripts automatizados con intenciones de buscar vulnerabilidades en tu página web.</p>
+                                    <div class="container-botones-proyecto">
+                                        <a href="https://github.com/Javiramos276/Ip-filter-attack" class="boton">
+                                            <img src="imgs/icons8-github-50.png" alt="Github" class="github-foto-negro">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="imagen-con-hover">
+                                <img src="imgs/carrito-de-compras-ecommerce.jpg" alt="" class="carrito-de-compras">
+                                <div class="overlay">
+                                    <p class="descripcion-proyecto">Carrito de compras hecho en lenguaje javascript, html y css. Se utilizaron objetos, consumición de una API y manejo del DOM para cargar los objetos dinámicamente en la página.</p>
+                                    <div class="container-botones-proyecto">
+                                        <a href="https://github.com/Javiramos276/Carrito-compras-js" class="boton">
+                                            <img src="imgs/icons8-github-50.png" alt="GitHub" class="github-foto-negro">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="imagen-con-hover">
+                                <img src="imgs/illustration-curriculum-vitae-or-cv-concept-vector.jpg" alt="" class="QR-django">
+                                <div class="overlay">
+                                    <p class="descripcion-proyecto">Proyecto para generación de qr con el fin crear una página web como una plantilla para un currículum vitae.</p>
+                                    <div class="container-botones-proyecto">
+                                        <a href="https://github.com/Javiramos276/Django_test" class="boton">
+                                            <img src="imgs/icons8-github-50.png" alt="GitHub" class="github-foto-negro">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -199,7 +284,7 @@
                 <h5 class="h5-contacto">¡Contáctame para tu proyecto!</h5>
                 <p class="parrafo-contacto">Puedes enviar un mail en cuaquier horario.</p>
                 <div class="container-boton-contacto">
-                    <button class="btn-contacto"><a href="mailto:ramosjavier276@gmail.com">Contacto</a></button>
+                    <button class="btn-contacto"><a href="mailto:ramosjavier276@gmail.com" class="a-contacto">Contacto</a></button>
                 </div>
             </div>
         </div>
