@@ -322,6 +322,15 @@ a{
     color: #fff;
 }
 
+.img-filtros{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-borde{
+    border-bottom: 2px solid #FF7A57;
+}
+
 .descripcion-proyecto{
     text-align: justify;
     padding-left: 10px;
@@ -507,7 +516,36 @@ a{
     }
 }
 
+.texto-rastastore{
+    font-family:'Montserrat', sans-serif;
+    font-size: 24px;
+}
 
+.titulo-rastastore{
+    font-family:'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    max-height: 700px;
+    object-fit: contain;
+}
+
+.carousel-caption h5 {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+    font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    font-weight: bold; /* Cambia el grosor de la fuente */
+    color: var(--salmon); /* Cambia el color del texto */
+}
+
+
+.carousel-caption p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+    color: #000000; /* Cambia el color del texto */
+}
 
 /*Configuracion para escritorio/tablets */
 @media only screen and (min-width: 1200px) {
