@@ -47,10 +47,6 @@ html, body {
     border-color: #C18708;
 }
 
-.container-par-foto{
-    display: flex;
-    flex-direction: row-reverse;
-}
 
 .container-parrafo{
     width: 100%;
@@ -58,15 +54,19 @@ html, body {
 }
 
 .container-imagen{
-    max-width: 500px;
-    height: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.container-imagen .img{
+    object-fit: contain;
 }
 
 .parrafo{
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 3em;
+    margin-left: 0;
     letter-spacing: 2px;
     text-align: justify;
     color: white;

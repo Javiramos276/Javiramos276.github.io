@@ -519,11 +519,13 @@ a{
 .texto-rastastore{
     font-family:'Montserrat', sans-serif;
     font-size: 24px;
+    color: white;
 }
 
 .titulo-rastastore{
     font-family:'Montserrat', sans-serif;
     font-size: 40px;
+    color: white;
 }
 
 .carousel-inner img {
@@ -540,6 +542,9 @@ a{
     color: var(--salmon); /* Cambia el color del texto */
 }
 
+.background-dark{
+    background-color: #5c5c5c;
+}
 
 .carousel-caption p {
     font-family: 'Arial', sans-serif; /* Cambia la fuente */
