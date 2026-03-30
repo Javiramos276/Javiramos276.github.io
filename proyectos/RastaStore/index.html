@@ -1,78 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../boostrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../styles.css">
-    <title>Proyecto RastaStore</title>
+    <title>RastaStoreCS2 — Marketplace de Skins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rastastore.css">
 </head>
 <body>
-    <div class="container-fluid background-dark">
-        <div class="d-flex justify-content-center mb-4">
-            <h1 class="border-bottom-crab titulo-rastastore">RastaStoreCS2</h1>
+
+    <a href="../../index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        ← Volver al portfolio
+    </a>
+
+    <header class="rasta-header">
+        <div class="header-container">
+            <div class="header-info">
+                <div class="header-badge">
+                    <span class="badge-category">Marketplace CS2</span>
+                    <span class="badge-live">● Demo Activa</span>
+                </div>
+                <h1>RASTA<span>STORE</span><br>CS2</h1>
+                <p>La tienda más segura para la compra y venta de skins de Counter Strike 2. +5000 intercambios realizados con entregas al instante.</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>PostgreSQL</span>
+                    <span>Django</span>
+                </div>
+            </div>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5,000+</span>
+                    <span class="stat-label">Intercambios</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Entregas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Seguridad</span>
+                </div>
+            </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-xxl-8">
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imgs/Objetos-y-filtrados.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/carrito-compras.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/rastastore-portfolio.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/administracion-1.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Panel de administraion</h5>
-                                <p class="texto-rastastore">Aqui se puede modificar el precio de las armas y ver la información de las mismas</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/administracion-2.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Panel de administracion</h5>
-                                <p>Aqui se puede ver el estado de las compras, si se encuentra pendiente, completada o cancelada</p>
-                            </div>
-                        </div>
+    </header>
+
+    <main class="rasta-main">
+
+        <!-- Info destacada -->
+        <div class="info-card">
+            <div class="info-card-icon">🎮</div>
+            <div class="info-card-content">
+                <p><strong>Proyecto funcional</strong> — Sistema completo de e-commerce con gestión de inventario en tiempo real, carrito de compras con generación de tickets y panel de administración para control de precios y estados de compra.</p>
+            </div>
+        </div>
+
+        <!-- Sección 1: Listado y filtros -->
+        <section class="project-section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>Listado + <span class="accent">Filtros avanzados</span></h2>
+                <p>Inventario completo extraído desde la cuenta del administrador. Cada skin muestra calidad (float), stickers, precio y categoría. Filtros por tipo de arma, estado de desgaste, rango de precio y búsqueda en tiempo real.</p>
+            </div>
+            <div class="section-image">
+                <img src="imgs/Objetos-y-filtrados.png" alt="Listado de objetos y filtros en RastaStore">
+                <div class="image-caption">
+                    <span class="caption-icon">🔍</span> Interfaz principal — filtros por categoría y búsqueda de items
+                </div>
+            </div>
+            <div class="section-features">
+                <div class="feature-tag">Cuchillos / Guantes / Rifles / Pistolas</div>
+                <div class="feature-tag">Filtro por precio, float y stickers</div>
+                <div class="feature-tag">Búsqueda instantánea por nombre</div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Carrito de compras -->
+        <section class="project-section">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>Carrito + <span class="accent">Sistema de reservas</span></h2>
+                <p>Agregá skins al carrito, visualizá el total y realizá una reserva. Cada compra genera un ticket único con ID de transacción, lista de armas, fecha y estado "Pendiente". Notificación por mail con los detalles de la orden.</p>
+            </div>
+            <div class="section-image">
+                <img src="imgs/carrito-compras.png" alt="Carrito de compras RastaStore">
+                <div class="image-caption">
+                    <span class="caption-icon">🛒</span> Resumen de compra — total acumulado y botón de reserva
+                </div>
+            </div>
+            <div class="section-features">
+                <div class="feature-tag">Reserva instantánea con UUID único</div>
+                <div class="feature-tag">Mail de confirmación con ticket</div>
+                <div class="feature-tag">Carrito persistente con sesión</div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Panel de administración (dos imágenes) -->
+        <section class="project-section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Panel <span class="accent">Administración</span></h2>
+                <p>Control total sobre precios, inventario y estado de las órdenes. Desde el panel podés actualizar precios de armas, visualizar el listado completo de objetos con su float y stickers, y gestionar el estado de cada transacción.</p>
+            </div>
+            <div class="section-image-double">
+                <div class="image-card">
+                    <img src="imgs/administracion-1.png" alt="Panel gestión de armas">
+                    <div class="image-caption">
+                        <span class="caption-icon">⚙️</span> Gestión de precios y atributos
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
+                <div class="image-card">
+                    <img src="imgs/administracion-2.png" alt="Panel gestión de órdenes">
+                    <div class="image-caption">
+                        <span class="caption-icon">📋</span> Seguimiento de transacciones
+                    </div>
+                </div>
+            </div>
+            <div class="section-features">
+                <div class="feature-tag">Edición de precios en tiempo real</div>
+                <div class="feature-tag">Tabla de órdenes con ID de transacción</div>
+                <div class="feature-tag">Estados: Pendiente → Completada / Cancelada</div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Landing y estadísticas -->
+        <section class="project-section">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2>Landing + <span class="accent">Estadísticas</span></h2>
+                <p>Página principal con métricas de confianza: más de 5000 intercambios realizados, entregas al instante y la garantía de ser la tienda más segura para el mercado de skins CS2.</p>
+            </div>
+            <div class="section-image">
+                <img src="imgs/rastastore-portfolio.png" alt="Landing RastaStore">
+                <div class="image-caption">
+                    <span class="caption-icon">🏆</span> Landing page — +5000 intercambios realizados
+                </div>
+            </div>
+            <div class="section-features">
+                <div class="feature-tag">Diseño responsive con Bootstrap 5</div>
+                <div class="feature-tag">Autenticación diferenciada (usuario / admin)</div>
+                <div class="feature-tag">Base de datos MySQL con prepared statements</div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <div class="rasta-cta">
+            <div class="cta-buttons">
+                <a href="../../index.html#portfolio" class="btn-secondary">← Volver al portfolio</a>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-xxl-4">
-                <div class="d-flex justify-content-center">
-                    <h2 class="titulo-rastastore border-bottom-crab">Listado de objetos y filtros</h2>
-                </div>
-                <p class="texto-rastastore">
-                    La página cuenta con un listado de todos los objetos extraidos del inventario del usuario administrador.
-                    Además cuenta con multiples filtrados de objetos dependiendo de la categoría, el estado del mismo, las categorias
-                    mas destacadas de dicho objeto o el precio que este tiene.
-                </p>
-            </div>
-            <div class="col-xxl-4">
-                <div class="d-flex justify-content-center">
-                    <h2 class="titulo-rastastore border-bottom-crab">Carrito de compras</h2>
-                </div>
-                <p class="texto-rastastore">
-                    Sistema de compras para reserva de los objetos. Cada compra se registra con un ticket y el estado
-                    de la compra se encuentra en estado pendiente para ser aceptado o cancelado.
-                </p>
-            </div>
-        </div>
-    </div>
-    <script src="../../boostrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    </main>
+
+    <footer class="rasta-footer">
+        <p>RastaStoreCS2 — Marketplace de skins para Counter Strike 2</p>
+        <p class="footer-credits">Diseño y desarrollo por Javier Ramos · 2025</p>
+    </footer>
+
 </body>
 </html>

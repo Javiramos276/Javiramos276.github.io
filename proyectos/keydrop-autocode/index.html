@@ -1,58 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keydrop-autocode</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- importamos la fuente -->
+    <title>Keydrop-Autocode — Javier Ramos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container-padre">
-        <div class="descripcion-proyecto">
-            <div class="container">
-                <div class="titulo">Keydrop-Autocode</div>
-                <div class="row">
-                    <div class="col-12 col-xl-6 container-parrafo">
-                        <p class="parrafo">
-                            ¿Estás cansado de no llegar a tiempo cuando tenés que canjear un código? Keydrop-Autocode es un servicio que permite coleccionar códigos de oro de usos limitado en la página web keydrop.com.
-                            <strong>Canjeá códigos de manera automática e instantánea</strong> a cualquier hora del día! Creado en lenguaje python, utiliza un sistema anti-captcha para acceder a la página y un sistema de logueo por cookies.
-                            A su vez, está vinculado a un bot de discord donde se recibirán todos los códigos para ser canjeados en la página. Se utilizaron librerías como selenium, Undetected chromedriver, asyncio y discord.py, entre otras.
-                        </p>
-                    </div>
-                    <div class="col-12 col-xl-6">
-                        <img src="imagenes-proyectos/keydrop-codecanjeado.png" alt="" class="foto-codigo">
-                    </div>
-                </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-xl-6">
-                        <div class="d-none d-xl-block">
-                            <img src="imagenes-proyectos/cmdcodigos.png" alt="" class="cmd-codigo">
-                        </div>
-                        <p class="parrafo2">Además, Keydrop-Autocode está en continuo desarrollo y optimización en caso de que ocurran errores. Próximamente, entradas a sorteos y batallas de cajas automatizadas!  Posee características como:
-                            <li class="parrafo2">Instalación sencilla.</li>
-                            <li class="parrafo2">Canjeo de códigos de manera instantánea.</li>
-                            <li class="parrafo2">Bajo consumo de recursos.</li>
-                        </p>
-                    </div>
-                </div>
+    <a href="../../index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Volver al portfolio
+    </a>
+
+    <section class="hero fade-up">
+        <div class="hero-inner">
+            <div class="hero-top-row">
+                <span class="hero-tag">Proyecto de automatización</span>
+                <span class="badge-discontinued">&#9888; Descontinuado</span>
+            </div>
+            <h1>Keydrop<br><em>Autocode</em></h1>
+            <p class="hero-subtitle">
+                Bot de automatización para el canjeo instantáneo de códigos dorados en Keydrop.com, integrado con Discord. Desarrollado en Python con sistema anti-captcha y manejo de cookies.
+            </p>
+            <div class="hero-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Selenium</span>
+                <span class="tech-tag">Undetected ChromeDriver</span>
+                <span class="tech-tag">discord.py</span>
+                <span class="tech-tag">asyncio</span>
             </div>
         </div>
-    </div>
+
+        <div class="hero-terminal fade-up" style="animation-delay: 0.3s">
+            <div class="terminal-bar">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">keydrop_bot.log</span>
+            </div>
+            <div class="terminal-body">
+                <p><span class="t-bot">[BOT]</span> Se ha detectado un código: <span class="t-code">N9IPVBVSM06059QDG</span></p>
+                <p><span class="t-bot">[BOT]</span> Redirigiendo a <span class="t-url">key-drop.com/en/?code=N9IPVBVSM06059QDG</span></p>
+                <p><span class="t-bot">[BOT]</span> Se hace click en el botón</p>
+                <p><span class="t-success">[BOT]</span> Canjeado &mdash; <span class="t-gold">83 monedas</span> obtenidas &mdash; 2024-01-10 18:11:03</p>
+                <p class="t-dim">&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</p>
+                <p><span class="t-bot">[BOT]</span> Se ha detectado un código: <span class="t-code">H74DCUDVRFK0MIYVP</span></p>
+                <p><span class="t-bot">[BOT]</span> Redirigiendo a <span class="t-url">key-drop.com/en/?code=H74DCUDVRFK0MIYVP</span></p>
+                <p><span class="t-success">[BOT]</span> Canjeado &mdash; <span class="t-gold">93 monedas</span> obtenidas &mdash; 2024-01-10 22:17:47</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="content">
+
+        <div class="discontinued-notice fade-up">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M10 8v4M10 13.5v.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <p>Este proyecto fue descontinuado. Keydrop modificó su sistema de detección y los cambios requeridos para mantener la compatibilidad superaron el alcance del proyecto. Se conserva como referencia de aprendizaje en automatización web y desarrollo de bots con Discord.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="feature fade-up" style="animation-delay: 0.1s">
+            <div class="feature-header">
+                <span class="feature-number">01</span>
+                <div class="feature-text">
+                    <h2>Canjeo <span class="accent">automático</span> de códigos</h2>
+                    <p>
+                        El bot monitoreaba un canal de Discord en tiempo real. Al detectar un código dorado, navegaba automáticamente a Keydrop.com, sorteaba el sistema anti-captcha mediante Undetected ChromeDriver y ejecutaba el canjeo en segundos, sin intervención humana y a cualquier hora del día.
+                    </p>
+                </div>
+            </div>
+            <div class="screenshot-card">
+                <img src="imagenes-proyectos/keydrop-codecanjeado.png" alt="Interfaz de Keydrop con código canjeado exitosamente">
+                <div class="screenshot-caption">Código <span class="caption-code">N9IPVBVSM06059QDG</span> &mdash; 83 monedas obtenidas</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="feature fade-up" style="animation-delay: 0.2s">
+            <div class="feature-header">
+                <span class="feature-number">02</span>
+                <div class="feature-text">
+                    <h2>Logs en <span class="accent">tiempo real</span> vía Discord</h2>
+                    <p>
+                        Cada acción del bot quedaba registrada en el canal de Discord configurado: detección del código, redirección, activación y confirmación del canjeo con el importe obtenido.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Instalación sencilla mediante dependencias de Python</li>
+                        <li>Canjeo instantáneo de códigos de oro de usos limitados</li>
+                        <li>Bajo consumo de recursos gracias a <code>asyncio</code></li>
+                        <li>Login persistente por sistema de cookies</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="screenshot-card">
+                <img src="imagenes-proyectos/cmdcodigos.png" alt="Logs del bot en la terminal">
+                <div class="screenshot-caption">Output del bot &mdash; detección y canjeo en tiempo real</div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <p>¿Querés ver más proyectos?</p>
+            <a href="../../index.html#portfolio" class="btn-back">Ver portfolio completo</a>
+        </div>
+
+    </main>
+
 </body>
 </html>

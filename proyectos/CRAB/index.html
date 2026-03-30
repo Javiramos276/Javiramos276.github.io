@@ -1,35 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../boostrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../styles.css">
-    <title>CRAB Project</title>
+    <title>Proyecto CRAB — Javier Ramos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="crab-styles.css">
 </head>
 <body>
-    <div class="d-flex justify-content-center">
-        <p class="h1 border-bottom-proyecto-crab">CLUB REGATAS ALMIRANTE BROWN</p>
-    </div>
-    <div class="container-fluid mg-top mg-bottom">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6 mb-4 round-border mg-x">
-                <p class="px-4 pt-3 h5">
-                    Además, existe un apartado donde los usuarios se pueden suscribir a las actividades. En la siguiente tabla el usuario podrá suscribirse o desuscribirse a la actividad. Los administradores podrán además acceder a editar dicha actividad o descargar un PDF de la actividad con la información de todas las personas involucradas en dicha actividad.
-                </p>
-                <img src="./imgs/Actividad.png" alt="" class="img-fluid mb-4">
-                <p class="h5 px-4 pt-3">
-                    Algunas de las otras utilidades que tiene la página del CRAB es la creación de noticias. Para ello existe un apartado donde los usuarios administradores podrán llenar un campo con un título, un copete y una breve descripción de una noticia acompañada de una foto. La creación de dichas noticias es muy sencilla de hacer y fácil de interpretar para los usuarios.
-                </p>
-                <img src="./imgs/Noticias.png" alt="" class="img-fluid mb-4 px-4">
-            </div>
-            <div class="col-12 col-md-8 col-lg-6 mb-4 round-border mg-x d-flex flex-column">
-                <p class="px-4 pt-3 h5">
-                    Ejemplo de un PDF generado de una actividad con subscripción de usuarios
-                </p>
-                <img src="./imgs/PDF.png" alt="" class="img-fluid">
+
+    <!-- Back link -->
+    <a href="../../index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Volver al portfolio
+    </a>
+
+    <!-- Hero -->
+    <section class="hero fade-up">
+        <div class="hero-inner">
+            <span class="hero-tag">Proyecto destacado</span>
+            <h1>Club de Regatas<br><em>Almirante Brown</em></h1>
+            <p class="hero-subtitle">
+                Plataforma web institucional con gestión de actividades, noticias y generación de reportes PDF para usuarios y administradores.
+            </p>
+            <div class="hero-tags">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">ReportLab / PDF</span>
+                <span class="tech-tag">PostgreSQL</span>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Content -->
+    <main class="content">
+
+        <!-- Feature 1: Actividades -->
+        <div class="feature" style="animation-delay: 0.1s">
+            <div class="feature-header">
+                <span class="feature-number">01</span>
+                <div class="feature-text">
+                    <h2>Gestión de <span class="accent">Actividades</span></h2>
+                    <p>
+                        Los usuarios pueden inscribirse o desuscribirse de actividades directamente desde la tabla. Los administradores tienen acceso a controles adicionales: editar la actividad, eliminarla y descargar un reporte PDF con el listado completo de inscriptos.
+                    </p>
+                </div>
+            </div>
+            <div class="screenshot-card">
+                <img src="./imgs/Actividad.png" alt="Pantalla de gestión de actividades del CRAB">
+                <div class="screenshot-caption">Vista de tabla de actividades — panel de usuario y administrador</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Feature 2: Noticias -->
+        <div class="feature" style="animation-delay: 0.2s">
+            <div class="feature-header">
+                <span class="feature-number">02</span>
+                <div class="feature-text">
+                    <h2>Sistema de <span class="accent">Noticias</span></h2>
+                    <p>
+                        Los administradores pueden publicar noticias con título, copete, descripción y foto desde un formulario sencillo. Las noticias se presentan en tarjetas paginadas, y los administradores pueden editarlas o eliminarlas directamente desde la vista.
+                    </p>
+                </div>
+            </div>
+            <div class="screenshot-card">
+                <img src="./imgs/Noticias.png" alt="Pantalla de noticias del CRAB">
+                <div class="screenshot-caption">Vista de tarjetas de noticias con paginación</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Feature 3: PDF -->
+        <div class="pdf-section" style="animation-delay:0.3s">
+            <div class="pdf-inner">
+                <div class="feature-text">
+                    <h2>Reporte <span class="accent">PDF</span> automático</h2>
+                    <p>
+                        Una vez finalizada la fecha de una actividad, los administradores pueden generar y descargar un PDF con el listado completo de inscriptos, incluyendo nombre, DNI, embarcación e institución.
+                    </p>
+                    <p>
+                        El documento incluye el encabezado institucional del CRAB, la referencia legal de la actividad y espacio para las firmas del Capitán y SubCapitán.
+                    </p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="./imgs/PDF.png" alt="Ejemplo de PDF generado por el sistema CRAB">
+                    <div class="screenshot-caption">PDF generado automáticamente con datos de inscriptos</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <p>¿Querés ver más proyectos?</p>
+            <a href="../../index.html#portfolio" class="btn-back">Ver portfolio completo</a>
+        </div>
+
+    </main>
+
 </body>
 </html>
